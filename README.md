@@ -1,1 +1,1 @@
-# Ergonomic-web-technologies
+# Нехайчик Ирина Игоревна, гр. 910901
