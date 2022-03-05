@@ -32,7 +32,7 @@
   
 ### 3.2 [AtlasBus](https://atlasbus.by/)  
   
-### 3.3 [LuxBux](https://luxbus.by/)
+### 3.3 [LuxBus](https://luxbus.by/)
   
 ## 4. Анализ запросов по данной тематике в Yandex  
   
