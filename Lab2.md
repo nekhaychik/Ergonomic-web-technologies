@@ -82,4 +82,9 @@
 * Забронировать (купить) билет на сайте можно в пару кликов даже без регистрации на сайте.  
   
 ## 8. Макет дизайна веб-сайта  
+[Дизайн на Figma](https://www.figma.com/file/xzRbhq8Uj6eJXLhWNA9uIl/BusStation)  
+  
+Главная страница  
+  
+![](https://i.imgur.com/xZeWEZh.png)  
   
