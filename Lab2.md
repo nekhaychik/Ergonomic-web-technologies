@@ -86,5 +86,9 @@
   
 Главная страница  
   
-![](https://i.imgur.com/xZeWEZh.png)  
+![](https://i.imgur.com/lIR2QdZ.png)  
+  
+Страница поиска маршрута  
+  
+![](https://i.imgur.com/6TWDMF4.png)
   
