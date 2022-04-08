@@ -12,12 +12,16 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Cofee Time</title>
+    <title>Coffee Time</title>
   </head>
 
   <body>
-    <nav class="navbar sticky-top navbar-expand-lg py-3 navbar-light bg-light">
+    <nav class="navbar sticky-top navbar-expand-lg py-3 navbar-light bg-white">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="/img/logo.svg" alt="Logo" />
@@ -37,13 +41,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Portfolio</a>
@@ -66,17 +67,15 @@
       </div>
     </nav>
 
-    <div class="intro vh-100 d-flex align-items-center">
+    <div class="intro vh-100 d-flex align-items-center" id="home">
       <div class="container">
         <div class="row">
           <div class="col-lg-7 mx-auto text-center">
             <h1 class="display-4 text-white my-3">
-              Build robust landing pages now
+              Taste the best coffee in town
             </h1>
             <p class="text-white my-3">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque
-              quia sequi eius. Quas, totam aliquid. Repudiandae reiciendis vel
-              excepturi ipsa voluptate dicta!
+              Grab a cup of coffee and forget about everything for a few minutes
             </p>
             <a href="#" class="btn me-2 btn-secondary">Get Started</a>
             <a href="#" class="btn btn-outline-light">My Portfolio</a>
@@ -84,6 +83,68 @@
         </div>
       </div>
     </div>
+
+    <section id="services">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-8 mx-auto text-center">
+            <h6 class="text-main">SERVICES</h6>
+            <h1>Our Services</h1>
+            <p>
+              “Our results show that people are naturally consuming the amount
+              of coffee that allows them to maintain their optimal level of
+              caffeine” to get that good caffeine feeling without becoming
+              jittery, Cornelis told me. “If we need more, we're reaching for
+              it.”
+            </p>
+          </div>
+        </div>
+        <div class="services row g-4">
+          <div class="col-lg-4 col-sm-6">
+            <div class="service card-effect">
+              <div class="iconbox">
+                <img
+                  class="service-icon"
+                  src="/img/coffee-bean.svg"
+                  alt="Coffee bean"
+                />
+              </div>
+              <h5 class="mt-4 mb-2">THE BEST SORTS</h5>
+              <p>
+                This is a great goal. Just a few commercial accounts can offer
+                you large or bulk orders on a weekly basis.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="service card-effect">
+              <div class="iconbox">
+                <img class="service-icon" src="/img/cafe.svg" alt="Cafe" />
+              </div>
+              <h5 class="mt-4 mb-2">MANY POINTS OF SALE</h5>
+              <p>
+                By offering your coffee, you automatically offer something for
+                your customers. This built in product differentiation is
+                important to realize in a competitive market.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="service card-effect">
+              <div class="iconbox">
+                <img class="service-icon" src="/img/time.svg" alt="Time" />
+              </div>
+              <h5 class="mt-4 mb-2">24/7 FAST DELIVERY</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptatibus cupiditate doloribus reiciendis suscipit minus
+                dicta id molestias aliquid at repellendus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

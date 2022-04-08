@@ -2,6 +2,7 @@
 
 :root {
   --primary: #2c1907;
+  --secondary: #2c190745;
   --dark: #21252f;
   --body: #888;
   --box-shadow: 0 8px 22px rgba(59, 34, 10, 0.1);
@@ -23,9 +24,17 @@ h6,
   color: var(--dark);
 }
 
+.text-main {
+  color: var(--primary);
+}
+
 a {
   color: var(--dark);
   text-decoration: none;
+}
+
+.navbar {
+  box-shadow: var(--box-shadow);
 }
 
 .btn-secondary {
@@ -56,4 +65,59 @@ a {
   left: 0;
   background-color: rgba(43, 30, 10, 0.8);
   z-index: -1;
+}
+
+section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.service-icon {
+  width: 54px;
+  height: 54px;
+}
+
+.services {
+  display: flex;
+}
+
+.service {
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.service::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  background-color: var(--secondary);
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.service:hover::after {
+  opacity: 1;
+  top: 0;
+}
+
+.service:hover p {
+  color: white;
+}
+
+.card-effect {
+  box-shadow: var(--box-shadow);
+  background-color: #fff;
+  padding: 25px;
+  transition: all 0.35s ease;
+}
+
+.card-effect:hover {
+  box-shadow: none;
+  transform: translateY(5px);
 }
