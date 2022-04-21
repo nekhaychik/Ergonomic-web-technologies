@@ -18,6 +18,8 @@
   
 ## 3. Скриншоты  
   
+![](https://i.imgur.com/XGx5rF1.jpg)
+  
 ## 4. Исходники  
 * [HTML](https://github.com/nekhaychik/Ergonomic-web-technologies/blob/main/index.html);
 * [CSS](https://github.com/nekhaychik/Ergonomic-web-technologies/blob/main/css/style.css);
