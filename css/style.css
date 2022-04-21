@@ -184,3 +184,27 @@ section {
 .blog-post img {
   width: 100%;
 }
+
+form input.form-control {
+  height: 56px;
+}
+
+form .form-control {
+  border: transparent;
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.footer {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: var(--primary);
+}
+
+.footer a {
+  color: var(--body);
+}
+
+.footer a:hover {
+  color: #fff;
+}
