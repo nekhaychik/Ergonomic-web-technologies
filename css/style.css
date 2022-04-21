@@ -69,6 +69,7 @@ a {
 
 section {
   padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .service-icon {
@@ -164,4 +165,22 @@ section {
 
 .pricing ul li {
   margin-top: 8px;
+}
+
+.prices {
+  display: flex;
+}
+
+.pricing {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing button {
+  justify-content: flex-end;
+}
+
+.blog-post img {
+  width: 100%;
 }
