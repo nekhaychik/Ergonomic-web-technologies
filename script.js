@@ -26,6 +26,5 @@ function start() {
       $error.text(email + " is not valid");
       return false;
     }
-    // return false;
   }
 }
