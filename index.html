@@ -16,7 +16,7 @@
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Coffee Time</title>
     <script src="script.js"></script>
   </head>
@@ -392,12 +392,14 @@
           </div>
         </div>
         <form
-          action="form.php?action=add"
-          method="post"
+        id="contact-form"
+          action="form.php"
+          method="POST"
           class="row g-3 justify-content-center"
         >
           <div class="col-md-5">
             <input
+            id="txt"
               type="text"
               name="name"
               class="form-control"
@@ -407,7 +409,7 @@
           <div class="col-md-5">
             <input
               name="email"
-              type="email"
+              
               class="email form-control"
               placeholder="Enter E-mail"
               style="position: relative"
@@ -416,6 +418,7 @@
           </div>
           <div class="col-md-10">
             <input
+              name="subject"
               type="text"
               class="form-control"
               placeholder="Enter Subject"
@@ -423,7 +426,7 @@
           </div>
           <div class="col-md-10">
             <textarea
-              name=""
+              name="message"
               id=""
               cols="30"
               rows="5"
@@ -431,12 +434,11 @@
               placeholder="Enter Message"
             ></textarea>
           </div>
-          <div class="col-md-10 d-grid">
-            <input
-              type="submit"
-              class="btn btn-submit btn-secondary"
-              value="Submit"
-            />
+          <input type="submit" value="Contact" class="btn btn-submit btn-secondary"> 
+          <!-- <div class="col-md-10 d-grid">
+            <button type="submit" id="add" class="btn btn-submit btn-secondary">
+              Contact
+            </button> -->
           </div>
           <a href="form.php?action=show">Показать содержимое файла</a>
         </form>

@@ -1,8 +1,9 @@
-function start () {
+function start() {
   $(".btn-submit").on("click", validate);
 
   function validateEmail(email) {
-    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    var re =
+      /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
   }
 
@@ -18,10 +19,13 @@ function start () {
     if (validateEmail(email)) {
       $error.fadeOut();
       sendForm();
+      $("#contact-form").sendForm();
+      return true;
     } else {
       $error.fadeIn();
       $error.text(email + " is not valid");
+      return false;
     }
-    return false;
+    // return false;
   }
 }
