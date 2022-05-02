@@ -14,13 +14,19 @@ function start() {
   function validate() {
     var email = $(".email").val();
     var $error = $(".error");
+    var $errorName = $(".error-name");
     $error.text("");
+    $errorName.text("");
 
     if (validateEmail(email)) {
       $error.fadeOut();
       sendForm();
       $("#contact-form").sendForm();
       return true;
+    } else if ($(".name").val() === "") {
+      $errorName.fadeIn();
+      $errorName.text("Name cannot be empty");
+      return false;
     } else {
       $error.fadeIn();
       $error.text(email + " is not valid");
